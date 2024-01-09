@@ -1,0 +1,430 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Happy Ne Year HTML Template
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+
+/*----------------------------------------*/
+/*  1.1 Theme Default
+/*----------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:wght@400;700;900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+---------------------------------*/
+body {
+    font-family: Inter;
+	font-size: 16px;
+	font-weight: normal;
+    color: rgba(7, 2, 17, 0.60);
+	line-height: 26px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Merriweather;
+    color: #070211;
+	margin-top: 0px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: 72px;
+}
+  
+h2 {
+font-size: 48px;
+}
+
+h3 {
+font-size: 32px;
+}
+
+h4 {
+font-size: 24px;
+}
+
+h5 {
+font-size: 20px;
+}
+
+h6 {
+font-size: 16px;
+}
+
+p {
+    color: rgba(7, 2, 17, 0.60);
+    font-family: Inter;
+    font-size: 20px;
+    line-height: 32px; 
+}
+
+/* Common style */
+.container {
+    max-width: 1320px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.section-space {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.section-space-top {
+    padding-top: 120px;
+}
+.color-danger {
+    color: #FF0000;
+}
+.text-center {
+    text-align: center;
+}
+.p-relative {
+    position: relative;
+}
+/* Button style */
+.join-btn {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+/* Banner style */
+.banner-area {
+    padding: 180px 0 180px;
+    max-width: 1320px;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+    z-index: 5;
+    border-radius: 16px;
+    &::before {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        border-radius: 16px;
+        background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%);
+        top: 0;
+        left: 0;
+        z-index: -1 ;
+    }
+}
+.banner-thumb-bg {
+    background-image: url(../images/banner/banner-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.banner-content {
+    text-align: center;
+    max-width: 632px;
+    margin: auto;
+}
+.banner-subtitle {
+    color: #FFF;
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 32px;
+    display: block;
+    margin-bottom: 10px;
+}
+.banner-title {
+    color: #FFF;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 95px;
+}
+
+/* Discount style */
+.discount-title {
+    margin-bottom: 35px;
+    font-size: 88px;
+    font-family: Inter;
+    font-weight: 700;
+}
+.section-subtitle {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: block;
+}
+.section-title {
+    color: #070211;
+    font-family: Merriweather;;
+    font-weight: 900;
+}
+.discount-thumb {
+    margin-top: 55px;
+}
+/* Welcome party style */
+.welcome-intro-bg {
+    background-image: url(../images/welcome/intro.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.welcome-intro-wrapper .description {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.welcome-intro-inner {
+    padding: 65px 135px 65px 125px;
+    position: relative;
+    z-index: 5;
+    border-radius: 16px;
+}
+.welcome-intro-inner:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%);
+    z-index: -1;
+    border-radius: 16px;
+}
+.welcome-intro-title {
+    color: #FFF;
+    font-family: Merriweather;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 88px;
+    letter-spacing: 7.04px;
+}
+.welcome-intro-inner {
+    display: grid;
+    grid-template-columns: 60% auto;
+    place-items: center;
+}
+.time-schedule-inner {
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
+    border-radius: 16px;
+    margin-top: 120px;
+}
+.time-schedule-title {
+    margin-bottom: 10px;
+}
+.fill-btn-danger {
+    display: inline-flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #F00;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 40px;
+}
+.holiday-thumb {
+    text-align: end;
+}
+/* Best offer style */
+.best-offer-title .section-title {
+    margin-bottom: 20px;
+}
+.best-offer-content .description {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.best-offer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+.best-offer-thumb {
+    border: 15px solid rgb(255, 0, 0);
+    padding: 35px;
+    border-radius: 50%;
+    margin: 0px 70px 0px 50px;
+}
+/* holiday-sale */
+.holiday-thumb-wrapper {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.rectangle-shape {
+    width: 1320px;
+    height: 229px;
+    border-radius: 16px 0px 16px 16px;
+    background: #F00;
+    position: relative;
+    margin-top: -234px;
+    z-index: -1;
+}
+.holiday-section-title .description {
+    color: rgba(7, 2, 17, 0.60);
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    max-width: 820px;
+    margin: 0 auto;
+}
+.holiday-thumb {
+    position: relative;
+}
+.holiday-discount-shape {
+    position: absolute;
+    top: 50px;
+    left: 90px;
+}
+.holiday-section-title .description {
+    font-size: 20px;
+    margin-top: 20px;
+}
+/* Portfolio style */
+.portfolio-item-grid {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 45px;
+}
+.portfolio-thumb img {
+    border-radius: 16px;
+}
+.newsletter-wrapper {
+    padding: 100px 0px;
+    border-radius: 16px;
+    background: rgba(255, 0, 0, 0.05);
+}
+.portfolio-section-title {
+    width: 55%;
+}
+.portfolio-section-title .description {
+    font-size: 16px;
+}
+/* Newsletter style */
+.newsletter-content .description {
+    color: rgba(7, 2, 17, 0.60);
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    max-width: 686px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    margin-top: 20px;
+}
+.newsletter-input {
+    max-width: 650px;
+    margin: 0 auto;
+    display: flex;
+}
+.newsletter-input input {
+    height: 72px;
+    width: 100%;
+    padding: 0px 20px 0px  20px;
+    border-radius: 50px 0px 0px  50px;
+    border: 0;
+    color: rgba(7, 2, 17, 0.30);
+    font-family: Inter;
+    font-size: 18px;
+}
+button.newsletter-btn {
+    width: 210px;
+    height: 72px;
+    flex-shrink: 0;
+    border-radius: 0px 50px 50px 0px;
+    background: #F00;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: 0;
+    cursor: pointer;
+}
+.newsletter-icon {
+    margin-bottom: 30px;
+}
+
+/* Footer style */
+.footer-area {
+    background: #070211;
+}
+.footer-widget-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-widget-content > p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    max-width: 375px;
+}
+.footer-widget-link ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer-widget-link ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+.footer-widget-link ul li a {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+}
+.footer-social-link ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.footer-social-wrapper {
+    padding: 45px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    margin: 50px 0;
+}
+.footer-copyright ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-copyright ul li a {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+}
